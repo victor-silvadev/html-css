@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body {
+    background-color: #467326;
+}
+
+header {
+    margin: 0 auto;
+}
+
+header > h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #A0D94A;
+}
+
+header > img {
+width: 70px;  
+display: block;
+margin: auto;
+margin-bottom: 50px;
+
+
+}
+
+h2 {
+    text-align: center;
+    
+}
+
+.jogos > li {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-seri;
+}
+
+.jogos > a {
+    color:#EFF299;
+}
+
+.botao {
+  display: inline-block; /* Importante para aceitar altura/largura */
+  padding: 5px 5px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none; /* Tira o sublinhado do link */
+  border-radius: 8px;
+ 
+}
+
+.botao:hover {
+  background-color: #2980b9;
+}
+
+
+
+.jogos {
+    margin: auto;
+}
+
+main {
+    background-color: #79A637;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #A0D94A;
+    margin:auto;
+    text-align: center;
+    padding: 3%;
+    
+    
+    
+}
+
+.final {
+    font-size: small;
+}

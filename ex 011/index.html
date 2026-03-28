@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens</title>
+</head>
+<body>
+    <h1>imagem dinamicas</h1>
+
+    <picture>
+        <source media="(min-width: 1050px)" srcset="foctos/foto-g.png" type="image/png">
+        
+        <source media="(min-width: 750px)" srcset="foctos/foto-m.png" type="image/png">
+
+        
+        <source media="(min-width: 350px)" srcset="foctos/foto-p.png" type="image/png">
+        
+        <img src="foctos/foto-g.png" alt="imagem flexicivel">
+    </picture>
+    
+</body>
+</html>

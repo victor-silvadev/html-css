@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+
+:root {
+    --cor01: whitesmoke;
+    --cor02: #99D5E0;
+    --cor03: #08428C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que bordas e paddings não aumentem o tamanho da caixa */
+}
+
+body{
+    background-color: var(--cor02);
+}
+
+.container-principal {
+    background-color: var(--cor01);
+    border-radius: 10px;
+    max-width: 550px;
+    min-width: 320px;
+    margin: auto;
+}
+
+header {
+    background-color: var(--cor03);
+    font-family: "Bungee", sans-serif;
+    text-align: center;
+    padding: 20px;
+    /* Aqui está o segredo: */
+    display: flex;
+    flex-direction: row;      /* Mantém os itens na mesma linha */
+    flex-wrap: wrap;          /* Se o celular for pequeno, a logo pula para baixo suavemente */
+    justify-content: center;  /* Centraliza o conteúdo principal */
+    align-items: center;      /* Alinha verticalmente o texto e a logo */
+    gap: 20px;
+}
+
+
+/* Ajuste para o texto não ficar colado */
+.p-titulo {
+    margin: 0;
+    min-width: 200px;         /* Impede que o texto fique esmagado */   
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin: 0;                /* Removemos as margens negativas e o 85% */
+    box-shadow: none;
+}
+
+nav {
+background-color: #15427c;
+padding: 10px;
+margin-bottom: 15px;
+outline: 10px;
+}
+
+nav > a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--cor01);
+    text-decoration: none;
+    margin-right: 6px;
+    
+}
+
+nav >a:hover {
+    text-transform: uppercase;
+    transition-duration: .5s;
+    background-color:rgba(0, 0, 0, 0.315);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.titulo1 {
+   font-family: "Oswald", sans-serif;
+   background-image: linear-gradient(800deg, #001f3f, whitesmoke);
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+
+
+p {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+img {
+    margin-left: 65px;
+    width: 400px;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.493);
+}
+  
+iframe {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.493);
+    
+}
+
+img, iframe {
+    max-width: 100%;    /* Não deixa o elemento ser maior que a tela */
+    height: auto;       /* Mantém a proporção para não "achatar" */
+    display: block;     /* Transforma em bloco para aceitar margens */
+    margin: 20px auto;  /* O 'auto' nas laterais centraliza o elemento! */
+}
+
+.final {
+    background-color: var(--cor02);
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 3px;
+   
+    
+
+}
+
+.final-texto {
+    background-color: var(--cor03);
+    border-radius: 0px 0px 15px 15px;
+}
