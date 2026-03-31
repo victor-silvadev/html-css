@@ -67,20 +67,25 @@ section.normal {
 section.imagem {
     background-color: brown;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.726);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem >p {
     display: inline-block;
     padding: 20px;
-    background-color: #02065952;
+    background-color: rgba(35, 28, 134, 0.411);
+        text-shadow: 1px 2px 2px black;
 }
 
-section#01 {
-    background-image: url(../imagens/arara-png.jpg);
+section#img01 {
+    background-image: url(../imagens/arara.jpg);
 }
 
-section#02 {
-    background-image: url('../imagens/araras-vermelha-png.jpg');
+section#img02 {
+    background-image: url('../imagens/ararasvermelha.jpg');
+    background-position: right top;
 }
 
 footer {
