@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4</title>
+    <style>
+        fieldset {
+            background-color: rgb(169, 155, 155);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+<fieldset>
+    <legend>Dados Pessoais</legend>
+    <p>
+        <label for="iemail">email:</label>
+        <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Seu email" required>
+    </p>
+    
+    <p>
+        <label for="itel">Telefone:</label>
+        <input type="tel" name="tel" id="itel" placeholder="(xx)xxxxxxxxx" required>
+    
+    </p>
+</fieldset>
+
+<p>
+    <input type="submit" value="enviar">
+    <input type="reset" value="limpar">
+</p>
+
+    </form>
+</body>
+</html>
