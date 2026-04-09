@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* todas as demais midias */
+
+
+
+
+@media  screen and (min-width: 700px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img {
+    display: block;
+    margin: auto;
+}
+
+img#tablet{display: none;}
+img#phone{display: none;}
+img#pc{display: block;}
+img#print{display: none;}
+img#tv{display: none;}
+}
