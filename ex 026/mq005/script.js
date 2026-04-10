@@ -10,3 +10,12 @@ if (opcoes.style.display == 'block') {
 }
 
 }
+
+function mudouTamanho() {
+    if (window.innerWidth >= 768) {
+        opcoes.style.display = 'block'
+} 
+    else {
+    opcoes.style.display = 'none'
+}
+}
