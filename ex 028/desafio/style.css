@@ -1,0 +1,50 @@
+@charset  "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 40px 1fr 40px;
+    grid-template-columns: 1fr 150px;
+}
+
+.topo {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    background-color: rgb(88, 44, 129);
+}
+
+.menu {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    background-color: rgb(122, 47, 192);
+}
+
+.principal {
+    grid-row: 3 / -2;
+    grid-column: 1 / 2;
+    background-color: whitesmoke;
+}
+
+.secundario {
+    grid-row: 3 / -2;
+    grid-column: -2 / -1;
+    background-color: rgb(228, 218, 199);
+}
+
+.rodape {
+    grid-row: -2 / -1;
+    grid-column: 1 / -1;
+    background-color: rgb(88, 44, 129);
+}
+
+.topo, .menu, .principal, .secundario, .rodape {
+    justify-items: center;
+    padding-top: 10px;
+}
